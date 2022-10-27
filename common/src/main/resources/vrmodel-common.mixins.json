@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.vrmodel.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

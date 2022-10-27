@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.vrmodel.mixin.fabric",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "EntityRenderDispatcherMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
