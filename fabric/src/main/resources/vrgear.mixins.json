@@ -1,8 +1,9 @@
 {
   "required": true,
-  "package": "net.vrgear.mixin.forge",
+  "package": "net.vrgear.mixin.fabric",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "EntityRenderDispatcherMixin"
   ],
   "mixins": [
   ],

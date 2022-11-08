@@ -14,8 +14,8 @@ loom {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-        mixinConfig "vrmodel-common.mixins.json"
-        mixinConfig "vrmodel.mixins.json"
+        mixinConfig "vrgear.common.mixins.json"
+        mixinConfig "vrgear.mixins.json"
     }
 }
 

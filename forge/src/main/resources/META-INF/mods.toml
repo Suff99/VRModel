@@ -4,7 +4,7 @@ loaderVersion = "[43,)"
 license = "Insert License Here"
 
 [[mods]]
-modId = "vrmodel"
+modId = "vrgear"
 version = "${version}"
 displayName = "Example Mod"
 authors = "Me!"
@@ -13,14 +13,14 @@ This is an example description! Tell everyone what your mod is about!
 '''
 #logoFile = ""
 
-[[dependencies.vrmodel]]
+[[dependencies.vrgear]]
 modId = "forge"
 mandatory = true
 versionRange = "[43,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.vrmodel]]
+[[dependencies.vrgear]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.19.2,)"

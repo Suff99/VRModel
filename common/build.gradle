@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/vrmodel.accesswidener")
+    accessWidenerPath = file("src/main/resources/vrgear.accesswidener")
 }
 
 dependencies {

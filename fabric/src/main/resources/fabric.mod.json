@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "vrmodel",
+  "id": "vrgear",
   "version": "${version}",
   "name": "Example Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,19 +12,19 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "Insert License Here",
-  "icon": "assets/vrmodel/icon.png",
+  "icon": "vr_gear.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.vrmodel.fabric.VRModelModFabric"
+      "net.vrgear.fabric.vrgearModFabric"
     ],
     "client": [
-      "net.vrmodel.fabric.VRModelModFabricClient"
+      "net.vrgear.fabric.vrgearModFabricClient"
     ]
   },
   "mixins": [
-    "vrmodel.mixins.json",
-    "vrmodel-common.mixins.json"
+    "vrgear.mixins.json",
+    "vrgear.common.mixins.json"
   ],
   "depends": {
     "fabric": "*",
