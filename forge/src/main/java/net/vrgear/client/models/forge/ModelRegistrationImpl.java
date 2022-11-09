@@ -1,9 +1,9 @@
-package net.vrgear.client.model.forge;
+package net.vrgear.client.models.forge;
 
+import net.vrgear.client.models.ModelRegistration;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.vrgear.client.model.ModelRegistration;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -22,6 +22,5 @@ public class ModelRegistrationImpl {
         ModelRegistration.setupModels();
         DEFINITIONS.forEach(event::registerLayerDefinition);
     }
-
 
 }

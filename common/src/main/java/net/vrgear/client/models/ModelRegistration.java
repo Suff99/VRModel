@@ -1,4 +1,4 @@
-package net.vrgear.client.model;
+package net.vrgear.client.models;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import net.minecraft.client.model.geom.ModelLayerLocation;

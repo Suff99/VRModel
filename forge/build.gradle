@@ -16,7 +16,21 @@ loom {
 
         mixinConfig "vrgear.common.mixins.json"
         mixinConfig "vrgear.mixins.json"
+
+        dataGen {
+            mod "vrgear"
+        }
     }
+
+    launches {
+        data {
+            arg "--existing", project(":common").file("src/main/resources/").absolutePath
+        }
+    }
+}
+
+sourceSets.main.resources {
+    srcDir project(":forge").file("src/generated/resources").absolutePath
 }
 
 configurations {

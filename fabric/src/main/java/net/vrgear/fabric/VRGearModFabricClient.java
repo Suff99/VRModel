@@ -1,9 +1,9 @@
 package net.vrgear.fabric;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.vrgear.client.model.ModelRegistration;
+import net.vrgear.client.models.ModelRegistration;
 
-public class VrGearModFabricClient implements ClientModInitializer {
+public class VRGearModFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ModelRegistration.setupModels();

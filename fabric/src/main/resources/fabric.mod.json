@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.vrgear.fabric.vrgearModFabric"
+      "net.vrgear.fabric.VRGearModFabric"
     ],
     "client": [
-      "net.vrgear.fabric.vrgearModFabricClient"
+      "net.vrgear.fabric.VRGearModFabricClient"
     ]
   },
   "mixins": [
