@@ -1,17 +1,17 @@
 modLoader = "javafml"
 loaderVersion = "[43,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/Suff99/VRModel/issues"
+license = "https://github.com/Suff99/VRModel/blob/main/LICENSE"
 
 [[mods]]
 modId = "vrgear"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "VR Gear"
+authors = "Yermak, Teacup, Suff99"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+This mod applies Quest 2 headset and controllers models for your player model, just for visuals!
 '''
-#logoFile = ""
+logoFile = "vr_gear.png"
 
 [[dependencies.vrgear]]
 modId = "forge"
