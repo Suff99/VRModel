@@ -1,11 +1,11 @@
 package net.vrgear.common.fabric;
 
-import net.vrgear.VRGearMod;
-import net.vrgear.common.WCItems;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.vrgear.VRGearMod;
+import net.vrgear.common.WCItems;
 
 public class WCItemsImpl {
 

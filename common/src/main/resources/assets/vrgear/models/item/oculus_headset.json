@@ -1,95 +1,362 @@
 {
-	"credit": "Made with Blockbench",
-	"texture_size": [64, 64],
-	"textures": {
-		"8": "vrgear:oculus_headset"
-	},
-	"elements": [
-		{
-			"name": "headset_main",
-			"from": [4, -2.25, 4],
-			"to": [12, 1.75, 7],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.74, 7]},
-			"faces": {
-				"north": {"uv": [5.75, 5, 7.75, 6], "texture": "#8"},
-				"east": {"uv": [5, 5, 5.75, 6], "texture": "#8"},
-				"south": {"uv": [8.5, 5, 10.5, 6], "texture": "#8"},
-				"west": {"uv": [7.75, 5, 8.5, 6], "texture": "#8"},
-				"up": {"uv": [7.75, 5, 5.75, 4.25], "texture": "#8"},
-				"down": {"uv": [9.75, 4.25, 7.75, 5], "texture": "#8"}
-			}
-		},
-		{
-			"name": "mains_straps",
-			"from": [3.48, -5.29, 5.48],
-			"to": [12.52, 3.75, 15.52],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.74, 7]},
-			"faces": {
-				"north": {"uv": [2.25, 2.25, 4.25, 4.25], "texture": "#8"},
-				"east": {"uv": [0, 2.25, 2.25, 4.25], "texture": "#8"},
-				"south": {"uv": [6.5, 2.25, 8.5, 4.25], "texture": "#8"},
-				"west": {"uv": [4.25, 2.25, 6.5, 4.25], "texture": "#8"},
-				"up": {"uv": [4.25, 2.25, 2.25, 0], "texture": "#8"},
-				"down": {"uv": [6.25, 0, 4.25, 2.25], "texture": "#8"}
-			}
-		},
-		{
-			"name": "strap_front",
-			"from": [3.49, -5.27, 5.99],
-			"to": [12.51, 3.75, 15.01],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.74, 7]},
-			"faces": {
-				"north": {"uv": [2.25, 8, 4.25, 10], "texture": "#8"},
-				"east": {"uv": [0.25, 8, 2.25, 10], "texture": "#8"},
-				"south": {"uv": [6.25, 8, 8.25, 10], "texture": "#8"},
-				"west": {"uv": [4.25, 8, 6.25, 10], "texture": "#8"},
-				"up": {"uv": [4.25, 8, 2.25, 6], "texture": "#8"},
-				"down": {"uv": [6.25, 6, 4.25, 8], "texture": "#8"}
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [0, -135, 0],
-			"translation": [0.5, 7.5, -4.25]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [0, -135, 0],
-			"translation": [0.5, 7.5, -4.25]
-		},
-		"firstperson_righthand": {
-			"rotation": [22, 19, -17],
-			"translation": [2.5, 10, 5.5]
-		},
-		"firstperson_lefthand": {
-			"rotation": [22, 19, -17],
-			"translation": [2.5, 10, 5.5]
-		},
-		"ground": {
-			"translation": [0, 8, -1]
-		},
-		"gui": {
-			"rotation": [24, 152, 0],
-			"translation": [-1, 6.75, 0],
-			"scale": [1.1, 1.1, 1.1]
-		},
-		"head": {
-			"translation": [0, 13.25, -4.75],
-			"scale": [1.6, 1.6, 1.6]
-		},
-		"fixed": {
-			"rotation": [-80, 0, 0],
-			"translation": [0, -0.5, -10]
-		}
-	},
-	"groups": [
-		{
-			"name": "oculus_headset",
-			"origin": [0, 0, 0],
-			"color": 0,
-			"nbt": "{}",
-			"armAnimationEnabled": false,
-			"children": [0, 1, 2]
-		}
-	]
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    64,
+    64
+  ],
+  "textures": {
+    "8": "vrgear:oculus_headset"
+  },
+  "elements": [
+    {
+      "name": "headset_main",
+      "from": [
+        4,
+        -2.25,
+        4
+      ],
+      "to": [
+        12,
+        1.75,
+        7
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          1.74,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            5.75,
+            5,
+            7.75,
+            6
+          ],
+          "texture": "#8"
+        },
+        "east": {
+          "uv": [
+            5,
+            5,
+            5.75,
+            6
+          ],
+          "texture": "#8"
+        },
+        "south": {
+          "uv": [
+            8.5,
+            5,
+            10.5,
+            6
+          ],
+          "texture": "#8"
+        },
+        "west": {
+          "uv": [
+            7.75,
+            5,
+            8.5,
+            6
+          ],
+          "texture": "#8"
+        },
+        "up": {
+          "uv": [
+            7.75,
+            5,
+            5.75,
+            4.25
+          ],
+          "texture": "#8"
+        },
+        "down": {
+          "uv": [
+            9.75,
+            4.25,
+            7.75,
+            5
+          ],
+          "texture": "#8"
+        }
+      }
+    },
+    {
+      "name": "mains_straps",
+      "from": [
+        3.48,
+        -5.29,
+        5.48
+      ],
+      "to": [
+        12.52,
+        3.75,
+        15.52
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          1.74,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.25,
+            2.25,
+            4.25,
+            4.25
+          ],
+          "texture": "#8"
+        },
+        "east": {
+          "uv": [
+            0,
+            2.25,
+            2.25,
+            4.25
+          ],
+          "texture": "#8"
+        },
+        "south": {
+          "uv": [
+            6.5,
+            2.25,
+            8.5,
+            4.25
+          ],
+          "texture": "#8"
+        },
+        "west": {
+          "uv": [
+            4.25,
+            2.25,
+            6.5,
+            4.25
+          ],
+          "texture": "#8"
+        },
+        "up": {
+          "uv": [
+            4.25,
+            2.25,
+            2.25,
+            0
+          ],
+          "texture": "#8"
+        },
+        "down": {
+          "uv": [
+            6.25,
+            0,
+            4.25,
+            2.25
+          ],
+          "texture": "#8"
+        }
+      }
+    },
+    {
+      "name": "strap_front",
+      "from": [
+        3.49,
+        -5.27,
+        5.99
+      ],
+      "to": [
+        12.51,
+        3.75,
+        15.01
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          1.74,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.25,
+            8,
+            4.25,
+            10
+          ],
+          "texture": "#8"
+        },
+        "east": {
+          "uv": [
+            0.25,
+            8,
+            2.25,
+            10
+          ],
+          "texture": "#8"
+        },
+        "south": {
+          "uv": [
+            6.25,
+            8,
+            8.25,
+            10
+          ],
+          "texture": "#8"
+        },
+        "west": {
+          "uv": [
+            4.25,
+            8,
+            6.25,
+            10
+          ],
+          "texture": "#8"
+        },
+        "up": {
+          "uv": [
+            4.25,
+            8,
+            2.25,
+            6
+          ],
+          "texture": "#8"
+        },
+        "down": {
+          "uv": [
+            6.25,
+            6,
+            4.25,
+            8
+          ],
+          "texture": "#8"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        -135,
+        0
+      ],
+      "translation": [
+        0.5,
+        7.5,
+        -4.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -135,
+        0
+      ],
+      "translation": [
+        0.5,
+        7.5,
+        -4.25
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        22,
+        19,
+        -17
+      ],
+      "translation": [
+        2.5,
+        10,
+        5.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        22,
+        19,
+        -17
+      ],
+      "translation": [
+        2.5,
+        10,
+        5.5
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        8,
+        -1
+      ]
+    },
+    "gui": {
+      "rotation": [
+        24,
+        152,
+        0
+      ],
+      "translation": [
+        -1,
+        6.75,
+        0
+      ],
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        13.25,
+        -4.75
+      ],
+      "scale": [
+        1.6,
+        1.6,
+        1.6
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        -80,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -0.5,
+        -10
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "oculus_headset",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "color": 0,
+      "nbt": "{}",
+      "armAnimationEnabled": false,
+      "children": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
 }

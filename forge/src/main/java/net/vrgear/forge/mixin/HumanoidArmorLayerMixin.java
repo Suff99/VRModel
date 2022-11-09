@@ -1,11 +1,7 @@
 package net.vrgear.forge.mixin;
 
-import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.vrgear.client.ArmorModelManager;
-import net.vrgear.common.items.ClothingItem;
-import net.vrgear.common.items.ICustomArmorTexture;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -21,6 +17,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
+import net.vrgear.client.ArmorModelManager;
+import net.vrgear.common.items.ClothingItem;
+import net.vrgear.common.items.ICustomArmorTexture;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

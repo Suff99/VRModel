@@ -1,7 +1,6 @@
 package net.vrgear.common.items;
 
 
-import net.vrgear.common.WCItems;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -11,6 +10,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.vrgear.common.WCItems;
 
 public class JSONClothingItem extends Item {
     private final EquipmentSlot slotType;

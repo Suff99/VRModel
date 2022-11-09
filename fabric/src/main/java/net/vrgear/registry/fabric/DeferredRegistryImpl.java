@@ -1,12 +1,12 @@
 package net.vrgear.registry.fabric;
 
 import com.google.common.base.MoreObjects;
-import net.vrgear.registry.DeferredRegistry;
-import net.vrgear.registry.RegistrySupplier;
 import net.minecraft.core.Registry;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.vrgear.registry.DeferredRegistry;
+import net.vrgear.registry.RegistrySupplier;
 
 import java.util.ArrayList;
 import java.util.Collection;
