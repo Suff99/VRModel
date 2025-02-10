@@ -8,7 +8,7 @@ import net.minecraftforge.common.data.LanguageProvider;
 public class LangProviderEnglish extends LanguageProvider {
 
     public LangProviderEnglish(DataGenerator gen) {
-        super(gen, VRGearMod.MOD_ID, "en_us");
+        super(gen.getPackOutput(), VRGearMod.MOD_ID, "en_us");
     }
 
     @Override

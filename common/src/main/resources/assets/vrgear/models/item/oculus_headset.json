@@ -5,7 +5,7 @@
     64
   ],
   "textures": {
-    "8": "vrgear:oculus_headset"
+    "8": "vrgear:item/oculus_headset"
   },
   "elements": [
     {

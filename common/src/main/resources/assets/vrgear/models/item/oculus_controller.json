@@ -1,7 +1,7 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "9": "vrgear:oculus_controller"
+    "9": "vrgear:item/oculus_controller"
   },
   "elements": [
     {

@@ -15,27 +15,31 @@ loom {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-        mixinConfig "vrgear.common.mixins.json"
         mixinConfig "vrgear.mixins.json"
+
 
         dataGen {
             mod "vrgear"
         }
-    }
 
-    launches {
-        data {
-            arg "--existing", project(":common").file("src/main/resources/").absolutePath
+        runs {
+            data {
+                programArgs "--existing", project(":common").file("src/main/resources/").absolutePath
+            }
         }
+
     }
 }
+
+
+
 
 unifiedPublishing {
     project {
         displayName = "[Forge] - VR Gear - $rootProject.minecraft_version - v$project.version"
         releaseType = "release"
         changelog = new File("${rootProject.projectDir}/changelog.html").text
-        gameVersions = ["1.19.2"]
+        gameVersions = ["1.20.1"]
         mainPublication tasks.remapJar
         gameLoaders = ["forge"]
         relations {
@@ -47,7 +51,7 @@ unifiedPublishing {
             curseforge {
                 token = CURSE_API_KEY
                 id = "697897"
-                gameVersions.addAll "Java 17", "1.19.2"
+                gameVersions.addAll "Java 17", "1.20.1"
             }
         }
 
@@ -83,6 +87,8 @@ dependencies {
 processResources {
     inputs.property "version", project.version
 
+    duplicatesStrategy = 'include'
+
     filesMatching("META-INF/mods.toml") {
         expand "version": project.version
     }
@@ -93,18 +99,22 @@ shadowJar {
     exclude "architectury.common.json"
 
     configurations = [project.configurations.shadowCommon]
-    classifier "dev-shadow"
+    archiveClassifier  = "dev-shadow"
+}
+
+sourceSets.main.resources {
+    srcDir project(":common").file("src/resources").absolutePath
 }
 
 remapJar {
     input.set shadowJar.archiveFile
     dependsOn shadowJar
-    classifier null
+    archiveClassifier  = null
 }
 
 jar {
     duplicatesStrategy = 'include'
-    classifier "dev"
+    archiveClassifier  = "dev"
 }
 
 sourcesJar {
